@@ -11,7 +11,7 @@ const CustomRoutes = () => {
             <Route path='/sign' element={<Sign_in/>}/>
             <Route path='/login' element={<LoginPage/>}/>
             <Route path='/home' element={<Home/>}/>
-            <Route path='*' element={<Navigate to={'/sign'}/>}/>
+            <Route path='*' element={<Navigate to='/sign'/>}/>
         </Routes>
     </div>
   )
