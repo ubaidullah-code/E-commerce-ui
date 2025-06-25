@@ -15,13 +15,13 @@ const LoginSchema = Yup.object().shape({
     .min(6, 'Password must be at least 6 characters'),
 });
 const LoginPage = () => {
-  const { state, dispatch } = useContext(GlobalContext);
+  
   const navigate = useNavigate();
 
   const handleLogin = async (values, { setSubmitting, setStatus }) => {
     setStatus(null);
     try {
-      const response = await axios.post('http://localhost:5004/login', {
+      const response = await axios.post('https://server-commerce-git-main-ubaidullah-codes-projects.vercel.app/login', {
         email: values.email,
         password: values.password,
       });

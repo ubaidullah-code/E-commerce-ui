@@ -37,7 +37,7 @@ const SignupForm = () => {
     try {
       const { firstName, lastName, email, password } = values;
       const displayName = `${firstName} ${lastName}`;
-      let result = await axios.post('http://localhost:5004/sign-up',{ first_name: firstName,
+      let result = await axios.post('https://server-commerce-git-main-ubaidullah-codes-projects.vercel.app/sign-up',{ first_name: firstName,
                 last_name: lastName,
                 email: email,
                 password: password})
